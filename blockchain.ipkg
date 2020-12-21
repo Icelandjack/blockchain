@@ -1,7 +1,10 @@
 package blockchain
 
--- blockchain
--- by Baldur Blöndal
+-- {-\  , . ( It looks like you're trying
+-- @ @      (   to hand things in on time
+-- |,|      (
+-- |m|/     (
+-- \-}
 
 opts = ""
 
@@ -14,14 +17,11 @@ modules = Main
         , Crypto.SHA
 
 pkgs = contrib
-     , effects
 
 main = Main
 
 executable = main
 
 objs = sha256.o
-
--- libs = ssl, crypto
 
 makefile = Makefile
