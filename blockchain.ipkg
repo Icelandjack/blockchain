@@ -1,0 +1,27 @@
+package blockchain
+
+-- blockchain
+-- by Baldur Blöndal
+
+opts = ""
+
+sourcedir = src
+
+modules = Main
+        , Blockchain
+        , Blockchain.Types
+        , Blockchain.Util
+        , Crypto.SHA
+
+pkgs = contrib
+     , effects
+
+main = Main
+
+executable = main
+
+objs = sha256.o
+
+-- libs = ssl, crypto
+
+makefile = Makefile
